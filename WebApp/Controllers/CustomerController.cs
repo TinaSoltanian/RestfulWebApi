@@ -85,5 +85,60 @@ namespace WebApp.Controllers
 
             return Ok(Mapper.Map<CustomerDto>(customer));
         }
+
+        [HttpPatch]
+        [Route("{id}")]
+        public IActionResult PartialUpdate(Guid id,[FromBody]  JsonPatchDocument<CustomerUpdateDto> customerPatch)
+        {
+            if (customerPatch == null)
+            {
+                return BadRequest();
+            }
+
+            Customer customer = _customerRepository.GetSingle(id);
+
+            if(customer == null)
+            {
+                return NotFound();
+            }
+
+            var customerToPatch = Mapper.Map<CustomerUpdateDto>(customer);
+            customerPatch.ApplyTo(customerToPatch);
+
+            Mapper.Map(customerToPatch, customer);
+            _customerRepository.Update(customer);
+
+            bool result = _customerRepository.Save();
+
+            if (!result)
+            {
+                return new StatusCodeResult(500);
+            }
+
+            return Ok(Mapper.Map<CustomerDto>(customer));
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public IActionResult Remove(Guid id)
+        {
+            var customer = _customerRepository.GetSingle(id);
+
+            if (customer == null)
+            {
+                return NotFound();
+            }
+
+            _customerRepository.Delete(id);
+
+            bool result = _customerRepository.Save();
+
+            if (!result)
+            {
+                return new StatusCodeResult(500);
+            }
+
+            return NoContent();
+        }
     }
 }

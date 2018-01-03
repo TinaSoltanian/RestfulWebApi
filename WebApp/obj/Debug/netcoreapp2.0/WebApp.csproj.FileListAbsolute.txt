@@ -10,3 +10,15 @@ C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
 C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb
 C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
 C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\appsettings.json
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\appsettings.json
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.deps.json
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.json
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.dev.json
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.dll
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.pdb
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csproj.CoreCompileInputs.cache
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfoInputs.cache
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb

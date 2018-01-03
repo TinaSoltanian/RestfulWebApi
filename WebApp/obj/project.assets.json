@@ -12690,11 +12690,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tina\\source\\repos\\WebApp\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "E:\\Projects\\RestWebApiCSharp\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "C:\\Users\\Tina\\source\\repos\\WebApp\\WebApp\\WebApp.csproj",
+      "projectPath": "E:\\Projects\\RestWebApiCSharp\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\Tina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tina\\source\\repos\\WebApp\\WebApp\\obj\\",
+      "outputPath": "E:\\Projects\\RestWebApiCSharp\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
