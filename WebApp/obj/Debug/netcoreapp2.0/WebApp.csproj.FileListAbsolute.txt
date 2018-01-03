@@ -1,0 +1,12 @@
+C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.deps.json
+C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.json
+C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.dev.json
+C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.dll
+C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.pdb
+C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfoInputs.cache
+C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
+C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
+C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb
+C:\Users\Tina\source\repos\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Tina\source\repos\WebApp\WebApp\bin\Debug\netcoreapp2.0\appsettings.json
