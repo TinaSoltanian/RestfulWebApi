@@ -14,6 +14,7 @@ using WebApp.Repositories;
 
 namespace WebApp.Controllers
 {
+    [ApiVersion("1.0", Deprecated = true)]
     [Route("api/[controller]")]
     public class CustomerController : Controller
     {
@@ -30,7 +31,8 @@ namespace WebApp.Controllers
         [ProducesResponseType(typeof(List<Customer>), 200)]
         public IActionResult GetAllCustomer(CustomerQueryParameter customerQueryParameter)
         {
-            _logger.LogInformation("------> GetAllCustomers");
+
+            _logger.LogInformation("------> GetAllCustomers version 1");
             var allcustomers = _customerRepository.GetAll(customerQueryParameter).ToList();
 
             var allCustomersDto = allcustomers.Select(x => Mapper.Map<CustomerDto>(x));

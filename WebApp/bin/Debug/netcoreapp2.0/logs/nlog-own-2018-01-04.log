@@ -44,3 +44,13 @@ Parameter name: ordering|url: http://localhost/api/customer|action: GetAllCustom
 2018-01-04 00:33:43.2094|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
 2018-01-04 00:33:47.4077|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
 2018-01-04 00:33:47.4171|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 00:53:54.5955|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 00:53:54.6336|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers version 1 |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 00:56:40.8001|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 00:56:40.8418|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers version 1 |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 00:59:59.1598|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 00:59:59.1915|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers version 1 |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 01:00:40.4960|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 01:00:40.5320|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers version 1 |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 01:01:54.3546|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-04 01:01:54.3669|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers version 1 |url: http://localhost/api/customer|action: GetAllCustomer

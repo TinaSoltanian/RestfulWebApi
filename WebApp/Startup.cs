@@ -22,6 +22,8 @@ using NLog.Web;
 using NLog.Extensions.Logging;
 using Microsoft.AspNetCore.Diagnostics;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace WebApp
 {
@@ -60,6 +62,14 @@ namespace WebApp
                 options.ReturnHttpNotAcceptable = true;
                 //options.InputFormatters.Add(new XmlSerializerInputFormatter());
                 //options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
+            });
+
+            services.AddApiVersioning(config =>
+            {
+                config.ReportApiVersions = true;
+                config.AssumeDefaultVersionWhenUnspecified = true;
+                config.DefaultApiVersion = new ApiVersion(1, 0);
+                config.ApiVersionReader = new HeaderApiVersionReader("api-version");
             });
         }
 

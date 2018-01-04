@@ -308,3 +308,188 @@ FROM [Customers] AS [c]
 2018-01-04 00:33:47.4488|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
 2018-01-04 00:33:47.4638|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 50.9853ms 
 2018-01-04 00:33:47.4638|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 60.9607ms 200 application/json; charset=utf-8 
+2018-01-04 00:53:46.5214|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:53:46.6110|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:53:46.6316|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 129.2513ms 200 text/html 
+2018-01-04 00:53:46.8375|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:53:47.1693|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 332.1356ms 200 application/json 
+2018-01-04 00:53:54.4465|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age%20desc   
+2018-01-04 00:53:54.5955|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:53:54.6336|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:53:54.6336|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers version 1 
+2018-01-04 00:53:58.6334|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:53:59.2382|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Age] DESC 
+2018-01-04 00:53:59.2595|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:53:59.2850|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:53:59.3263|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 4731.3666ms 
+2018-01-04 00:53:59.3263|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4884.3437ms 200 application/json; charset=utf-8 
+2018-01-04 00:54:12.9995|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age%20desc   
+2018-01-04 00:54:13.0212|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 00:54:13.0352|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 00:54:13.0424|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 41.4307ms 400 application/json; charset=utf-8 
+2018-01-04 00:54:19.5020|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age%20desc   
+2018-01-04 00:54:19.5020|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 00:54:19.5100|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 00:54:19.5100|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 12.3102ms 400 application/json; charset=utf-8 
+2018-01-04 00:54:46.2859|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age%20desc   
+2018-01-04 00:54:46.2902|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 00:54:46.2902|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 00:54:46.2902|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 15.8655ms 400 application/json; charset=utf-8 
+2018-01-04 00:55:55.2392|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:55:55.3218|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:55:55.3447|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 122.4691ms 200 text/html 
+2018-01-04 00:55:55.5464|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:55:55.8648|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 317.316ms 200 application/json 
+2018-01-04 00:56:03.5890|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age%20desc   
+2018-01-04 00:56:03.6882|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 00:56:03.7035|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 00:56:03.7134|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 123.6158ms 400 application/json; charset=utf-8 
+2018-01-04 00:56:21.2061|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:56:21.2117|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 00:56:21.2117|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 00:56:21.2277|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 20.5978ms 400 application/json; charset=utf-8 
+2018-01-04 00:56:40.7247|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:56:40.8001|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:56:40.8418|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:56:40.8418|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers version 1 
+2018-01-04 00:56:50.7979|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:56:51.3922|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Firstname] 
+2018-01-04 00:56:51.4142|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:56:51.4345|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:56:51.4697|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 10672.3148ms 
+2018-01-04 00:56:51.4697|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 10749.637ms 200 application/json; charset=utf-8 
+2018-01-04 00:56:56.5017|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:56:56.5017|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 00:56:56.5117|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 00:56:56.5117|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 15.4209ms 400 application/json; charset=utf-8 
+2018-01-04 00:59:58.9128|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:59:59.1598|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:59:59.1915|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:59:59.1915|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers version 1 
+2018-01-04 00:59:59.1997|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:59:59.6686|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Firstname] 
+2018-01-04 00:59:59.6875|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:59:59.7142|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:59:59.7532|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 593.8539ms 
+2018-01-04 00:59:59.7532|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 853.8876ms 200 application/json; charset=utf-8 
+2018-01-04 01:00:32.5748|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:00:32.6594|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:00:32.6776|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 120.7706ms 200 text/html 
+2018-01-04 01:00:32.8766|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:00:33.2033|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 326.2454ms 200 application/json 
+2018-01-04 01:00:40.3495|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:00:40.4960|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 01:00:40.5320|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 01:00:40.5320|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers version 1 
+2018-01-04 01:00:43.0484|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 01:00:43.6430|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Firstname] 
+2018-01-04 01:00:43.6653|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 01:00:43.6914|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 01:00:43.7334|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 3237.9089ms 
+2018-01-04 01:00:43.7334|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3388.4527ms 200 application/json; charset=utf-8 
+2018-01-04 01:01:54.3433|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:01:54.3546|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 01:01:54.3546|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 01:01:54.3669|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers version 1 
+2018-01-04 01:02:01.0712|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 01:02:01.0905|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Firstname] 
+2018-01-04 01:02:01.0905|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 01:02:01.1022|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 01:02:01.1022|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 6754.8559ms 
+2018-01-04 01:02:01.1022|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6768.6562ms 200 application/json; charset=utf-8 
+2018-01-04 01:02:11.6277|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:02:11.6472|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:02:11.6472|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:02:11.6650|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 37.1435ms 400 application/json; charset=utf-8 
+2018-01-04 01:03:35.6544|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:03:35.7386|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:03:35.7573|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 121.0575ms 200 text/html 
+2018-01-04 01:03:35.9591|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:03:36.2679|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 308.4863ms 200 application/json 
+2018-01-04 01:03:38.5120|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:03:38.6142|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:03:38.6299|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:03:38.6393|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 127.0232ms 400 application/json; charset=utf-8 
+2018-01-04 01:05:31.8649|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:05:31.9494|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:05:31.9712|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 123.6933ms 200 text/html 
+2018-01-04 01:05:32.1786|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:05:32.5130|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 333.8663ms 200 application/json 
+2018-01-04 01:05:32.6114|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:05:32.7240|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:05:32.7398|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:05:32.7503|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 138.1294ms 400 application/json; charset=utf-8 
+2018-01-04 01:05:37.7839|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:05:37.7883|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:05:37.7883|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:05:37.7883|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 14.8485ms 400 application/json; charset=utf-8 
+2018-01-04 01:06:07.0486|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:06:07.1434|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:06:07.1656|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 137.6484ms 200 text/html 
+2018-01-04 01:06:07.3966|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:06:07.7643|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 368.2673ms 200 application/json 
+2018-01-04 01:06:08.7717|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:06:08.8792|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:06:08.8955|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:06:08.9056|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 133.6169ms 400 application/json; charset=utf-8 
+2018-01-04 01:08:13.5608|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:08:13.6490|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:08:13.6689|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 130.5617ms 200 text/html 
+2018-01-04 01:08:13.8933|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:08:14.2174|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 323.876ms 200 application/json 
+2018-01-04 01:08:15.3156|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:08:15.4103|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:08:15.4265|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:08:15.4369|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 120.904ms 400 application/json; charset=utf-8 
+2018-01-04 01:09:40.1916|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:09:40.2490|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:09:40.2590|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 78.4436ms 200 text/html 
+2018-01-04 01:09:40.4493|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:09:40.7097|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 260.5254ms 200 application/json 
+2018-01-04 01:09:51.3547|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 01:09:51.4422|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 01:09:51.4654|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 127.2919ms 200 text/html 
+2018-01-04 01:09:51.6790|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 01:09:51.9905|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 311.6073ms 200 application/json 
+2018-01-04 01:09:53.5409|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 01:09:53.6347|5|Microsoft.AspNetCore.Mvc.Routing.DefaultApiVersionRoutePolicy|INFO|Multiple candidate actions were found, but none matched the requested service API version '2.0'. Candidate actions: WebApp.Controllers.CustomerController.GetAllCustomer (WebApp)
+WebApp.Controllers.CustomerController.AddCustomer (WebApp) 
+2018-01-04 01:09:53.6500|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ActionContext. 
+2018-01-04 01:09:53.6500|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 119.2642ms 400 application/json; charset=utf-8 
