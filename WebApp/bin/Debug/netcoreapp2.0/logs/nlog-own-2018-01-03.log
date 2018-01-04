@@ -20,3 +20,48 @@
 2018-01-03 18:08:56.0267|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/39f51c85-8fb0-4af5-9b0c-42132f6dd7d7|action: GetSingleCustomer
 2018-01-03 18:09:03.7460|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/39f51c85-8fb0-4af5-9b0c-42132f6dd7d744|action: GetSingleCustomer
 2018-01-03 18:09:11.9639|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/39f51c85-8fb0-4af5-9b0c-42132f6dd7d7|action: GetSingleCustomer
+2018-01-03 18:14:42.2274|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:15:01.1710|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:15:55.8512|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:18:08.4893|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:18:20.3893|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:21:49.4017|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:22:10.1506|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:22:10.1672|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:24:29.1008|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:25:01.1451|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:25:53.9333|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:26:41.0896|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:27:44.4185|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:27:59.6037|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:28:06.9954|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:32:54.5071|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:33:09.9754|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:37:05.4459|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:37:34.5155|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:38:09.0170|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:38:52.9136|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:39:36.9957|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:39:37.0088|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:39:49.2173|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:39:56.1161|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:40:43.4498|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:41:51.2360|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: AddCustomer
+2018-01-03 18:45:09.9998|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:45:10.0230|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:45:41.1137|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/46c1f6dd-b0d0-4907-86b1-0ed61d5b68c6|action: UpdateCustomer
+2018-01-03 18:45:51.0218|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:45:51.0218|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:47:15.9005|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/46c1f6dd-b0d0-4907-86b1-0ed61d5b68c6|action: UpdateCustomer
+2018-01-03 18:47:43.6476|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/46c1f6dd-b0d0-4907-86b1-0ed61d5b68c6|action: UpdateCustomer
+2018-01-03 18:48:07.2016|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:48:07.2156|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:48:15.4935|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/28702638-c6c7-438d-9e67-73eef2eba649|action: UpdateCustomer
+2018-01-03 18:48:43.9941|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/28702638-c6c7-438d-9e67-73eef2eba649|action: UpdateCustomer
+2018-01-03 18:48:48.8834|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:48:48.8834|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:52:02.3848|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:52:02.4020|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer/|action: GetAllCustomer
+2018-01-03 18:53:02.7266|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/c3270bbd-7cfa-4dcc-9b1d-3e8f43f5a094|action: UpdateCustomer
+2018-01-03 18:53:15.9930|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/c3270bbd-7cfa-4dcc-9b1d-3e8f43f5a094|action: PartialUpdate
+2018-01-03 18:54:08.4683|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/c3270bbd-7cfa-4c-9b1d-3e8f43f5a094|action: PartialUpdate

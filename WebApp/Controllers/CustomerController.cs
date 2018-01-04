@@ -50,8 +50,18 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddCustomer(CustomerCreateDto customerCreateDto)
+        public IActionResult AddCustomer([FromBody] CustomerCreateDto customerCreateDto)
         {
+            if (customerCreateDto == null)
+            {
+                return BadRequest("customercreate object was null");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             Customer customer = Mapper.Map<Customer>(customerCreateDto);
 
             _customerRepository.Add(customer);
@@ -72,11 +82,21 @@ namespace WebApp.Controllers
         [Route("{id}")]
         public IActionResult UpdateCustomer(Guid id,[FromBody] CustomerUpdateDto customerUpdateDto)
         {
+            if (customerUpdateDto == null)
+            {
+                return BadRequest();
+            }
+
             var customer = _customerRepository.GetSingle(id);
 
             if (customer == null)
             {
                 return NotFound();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
             }
 
             Mapper.Map(customerUpdateDto, customer);
@@ -109,7 +129,14 @@ namespace WebApp.Controllers
             }
 
             var customerToPatch = Mapper.Map<CustomerUpdateDto>(customer);
-            customerPatch.ApplyTo(customerToPatch);
+            customerPatch.ApplyTo(customerToPatch, ModelState);
+
+            TryValidateModel(customerToPatch);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
             Mapper.Map(customerToPatch, customer);
             _customerRepository.Update(customer);
