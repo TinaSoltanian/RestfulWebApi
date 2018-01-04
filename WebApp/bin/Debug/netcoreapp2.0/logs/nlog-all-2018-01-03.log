@@ -1,0 +1,458 @@
+2018-01-03 09:03:43.7677|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 09:03:44.0127|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 09:03:44.1458|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 09:03:44.2641|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (33ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 09:03:44.2824|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 09:03:44.2824|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 09:03:44.2971|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 09:03:44.7698|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 09:03:44.9546|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 09:03:44.9720|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 09:03:44.9720|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 09:03:44.9890|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 09:03:44.9890|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 09:03:45.0092|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 09:03:45.1115|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 157.916ms 
+2018-01-03 09:03:45.1115|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 365.1589ms 200 application/json; charset=utf-8 
+2018-01-03 14:34:03.3632|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 14:34:03.5960|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 14:34:03.6856|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 14:34:03.7728|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (24ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 14:34:03.8753|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:34:03.8753|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:34:03.8919|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:34:04.7787|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/   
+2018-01-03 14:34:04.8095|6|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /index.html was not modified 
+2018-01-03 14:34:04.8243|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 59.9022ms 304 text/html 
+2018-01-03 14:35:10.5860|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:35:10.7354|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:35:10.7533|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:35:20.4400|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 9696.8654ms 
+2018-01-03 14:35:20.8773|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:35:21.1094|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 10523.4584ms 500 text/html; charset=utf-8 
+2018-01-03 14:37:40.0698|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:37:40.1055|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:37:40.1161|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:37:45.7126|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 5636.9879ms 
+2018-01-03 14:37:45.7713|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:37:45.8066|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5736.4977ms 500 text/html; charset=utf-8 
+2018-01-03 14:38:04.1626|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:38:04.1910|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:38:04.1910|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:38:12.3352|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 8164.3529ms 
+2018-01-03 14:38:12.4083|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:38:12.4415|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 8277.7517ms 500 text/html; charset=utf-8 
+2018-01-03 14:42:49.5463|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 14:42:49.7177|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 14:42:49.8106|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 14:42:49.8992|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (26ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 14:42:49.9128|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:42:49.9128|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:42:49.9231|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:42:51.4511|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:42:51.6025|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:42:51.6205|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:43:00.8297|22|Microsoft.AspNetCore.Server.Kestrel|WARN|Heartbeat took longer than "00:00:01" at "01/03/2018 22:42:59 +00:00". 
+2018-01-03 14:43:00.8297|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 9207.5447ms 
+2018-01-03 14:43:00.9283|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:43:00.9978|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 9560.914ms 500 text/html; charset=utf-8 
+2018-01-03 14:46:10.8096|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 14:46:10.9903|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 14:46:11.0818|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 14:46:11.1758|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (26ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 14:46:11.1893|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:46:11.1893|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:46:11.1893|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 14:46:11.5391|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:46:11.6964|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:46:11.7132|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:46:56.1704|22|Microsoft.AspNetCore.Server.Kestrel|WARN|Heartbeat took longer than "00:00:01" at "01/03/2018 22:46:56 +00:00". 
+2018-01-03 14:46:56.1742|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 44456.0225ms 
+2018-01-03 14:46:56.2682|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:46:56.3386|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 44812.7778ms 500 text/html; charset=utf-8 
+2018-01-03 14:46:59.1533|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:46:59.1587|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:46:59.1587|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:47:03.8419|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 4682.6093ms 
+2018-01-03 14:47:03.9017|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:47:03.9409|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4786.2926ms 500 text/html; charset=utf-8 
+2018-01-03 14:47:06.3849|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 14:47:06.3849|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 14:47:06.3939|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 14:47:06.4206|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 31.7786ms 
+2018-01-03 14:47:06.4661|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 14:47:06.4991|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 113.4725ms 500 text/html; charset=utf-8 
+2018-01-03 17:31:42.9374|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 17:31:43.1029|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 17:31:43.1892|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 17:31:43.2739|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (24ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 17:31:43.2952|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:31:43.3001|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:31:43.3001|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:31:43.7378|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/   
+2018-01-03 17:31:43.7569|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'E:\Projects\RestWebApiCSharp\WebApp\wwwroot\index.html' 
+2018-01-03 17:31:43.7828|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 61.5448ms 200 text/html 
+2018-01-03 17:32:26.2232|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:32:26.3753|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:32:26.3960|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:32:26.4357|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 64.3289ms 
+2018-01-03 17:32:26.5086|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 17:32:26.5731|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 351.1757ms 500 text/html; charset=utf-8 
+2018-01-03 17:32:40.2010|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:32:40.2079|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:32:40.2079|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:32:40.2466|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 41.2889ms 
+2018-01-03 17:32:40.2864|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 17:32:40.3232|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 122.2265ms 500 text/html; charset=utf-8 
+2018-01-03 17:33:30.0897|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 17:33:30.2781|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 17:33:30.3596|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 17:33:30.4416|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (23ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 17:33:30.4539|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:33:30.4539|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:33:30.4539|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:33:34.9022|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:33:35.0563|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:33:35.0731|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:33:35.1158|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 60.7592ms 
+2018-01-03 17:33:35.1927|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 17:33:35.2584|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 370.8877ms 500 text/html; charset=utf-8 
+2018-01-03 17:36:37.3512|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 17:36:37.5183|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 17:36:37.6037|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 17:36:37.6886|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (22ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 17:36:37.6886|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:36:37.7196|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:36:37.7196|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:36:42.9294|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:36:43.0841|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:36:43.1007|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:36:43.1422|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 58.7443ms 
+2018-01-03 17:36:43.2249|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 17:36:43.2911|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 376.5963ms 500 text/html; charset=utf-8 
+2018-01-03 17:37:16.4060|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:37:16.4060|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:37:16.4238|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:37:16.4544|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 43.2608ms 
+2018-01-03 17:37:16.4956|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 17:37:16.5290|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 123.1848ms 500 text/html; charset=utf-8 
+2018-01-03 17:37:59.4361|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 17:37:59.6063|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 17:37:59.6872|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 17:37:59.7695|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (23ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 17:37:59.7825|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:37:59.7997|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:37:59.7997|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:38:05.2248|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:38:05.3776|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:38:05.3952|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:38:05.4397|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 63.5676ms 
+2018-01-03 17:38:05.5184|0|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request test
+2018-01-03 17:38:05.5841|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 375.4674ms 500 text/html; charset=utf-8 
+2018-01-03 17:42:39.1765|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 17:42:39.3529|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 17:42:39.4363|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 17:42:39.5195|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (22ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 17:42:39.5308|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:42:39.5462|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:42:39.5462|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 17:42:45.0113|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3776/api/customer   
+2018-01-03 17:42:45.1718|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 17:42:45.1878|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 17:42:45.2300|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 59.7044ms 
+2018-01-03 17:42:45.3111|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: test test
+2018-01-03 17:42:45.3547|500|Global exception logger|ERROR|test test
+2018-01-03 17:42:45.3894|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 394.181ms 500 text/plain 
+2018-01-03 18:07:51.9839|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 18:07:52.1474|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 18:07:52.2333|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 18:07:52.3172|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (23ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 18:07:52.3287|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 18:07:52.3340|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 18:07:52.3340|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 18:08:42.9095|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:55870/api/customer   
+2018-01-03 18:08:43.0755|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 18:08:43.0937|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 18:08:43.0937|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 18:08:43.1128|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 18:08:43.1188|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 18:08:43.1188|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 18:08:43.2298|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 154.4302ms 
+2018-01-03 18:08:43.2298|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 339.4677ms 200 application/json; charset=utf-8 
+2018-01-03 18:08:56.0010|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:55870/api/customer/39f51c85-8fb0-4af5-9b0c-42132f6dd7d7   
+2018-01-03 18:08:56.0267|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 18:08:56.0515|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetSingleCustomer (WebApp) with arguments (39f51c85-8fb0-4af5-9b0c-42132f6dd7d7) - ModelState is Valid 
+2018-01-03 18:08:56.0893|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 18:08:56.2562|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[Firstname], [x].[Lastname]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2018-01-03 18:08:56.2646|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 18:08:56.2646|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetSingleCustomer (WebApp) in 243.2486ms 
+2018-01-03 18:08:56.2743|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 273.4318ms 200 application/json; charset=utf-8 
+2018-01-03 18:09:03.7403|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:55870/api/customer/39f51c85-8fb0-4af5-9b0c-42132f6dd7d744   
+2018-01-03 18:09:03.7460|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 18:09:03.8242|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetSingleCustomer (WebApp) with arguments (00000000-0000-0000-0000-000000000000) - ModelState is Invalid 
+2018-01-03 18:09:03.8242|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 18:09:03.8242|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[Firstname], [x].[Lastname]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2018-01-03 18:09:03.8425|1|Microsoft.AspNetCore.Mvc.StatusCodeResult|INFO|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2018-01-03 18:09:03.8425|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetSingleCustomer (WebApp) in 101.7272ms 
+2018-01-03 18:09:03.8509|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 110.5549ms 404  
+2018-01-03 18:09:11.9639|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:55870/api/customer/39f51c85-8fb0-4af5-9b0c-42132f6dd7d7   
+2018-01-03 18:09:11.9639|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 18:09:11.9639|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetSingleCustomer (WebApp) with arguments (39f51c85-8fb0-4af5-9b0c-42132f6dd7d7) - ModelState is Valid 
+2018-01-03 18:09:11.9793|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 18:09:11.9793|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[Firstname], [x].[Lastname]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2018-01-03 18:09:11.9793|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 18:09:11.9936|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetSingleCustomer (WebApp) in 24.5398ms 
+2018-01-03 18:09:11.9936|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 34.239ms 200 application/json; charset=utf-8 

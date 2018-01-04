@@ -16,6 +16,11 @@ using Microsoft.EntityFrameworkCore.Design;
 using WebApp.Entities;
 using WebApp.Dtos;
 using WebApp.Services;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.Logging;
+using NLog.Web;
+using NLog.Extensions.Logging;
+using Microsoft.AspNetCore.Diagnostics;
 
 namespace WebApp
 {
@@ -30,6 +35,7 @@ namespace WebApp
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
+            env.ConfigureNLog("nlog.config");
 
             Configuration = builder.Build();           
         } 
@@ -40,17 +46,47 @@ namespace WebApp
             services.AddOptions();
             services.AddDbContext<MyDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<ISeedDataService, SeedDataService>();            
-            services.AddMvc();
+            services.AddScoped<ISeedDataService, SeedDataService>();
+            services.AddMvc(options =>
+            {
+                options.ReturnHttpNotAcceptable = true;
+                //options.InputFormatters.Add(new XmlSerializerInputFormatter());
+                //options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug(LogLevel.Error);
+            loggerFactory.AddNLog();
+            app.AddNLogWeb();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+
+            app.UseExceptionHandler(errorApp =>
+            {
+                errorApp.Run(async context =>
+                {
+                    context.Response.StatusCode = 500;
+                    context.Response.ContentType = "text/plain";
+                    var errorFeature = context.Features.Get<IExceptionHandlerFeature>();
+                    if (errorFeature != null)
+                    {
+                        var logger = loggerFactory.CreateLogger("Global exception logger");
+                        logger.LogError(500, errorFeature.Error, errorFeature.Error.Message);
+                    }
+
+                    await context.Response.WriteAsync("There was an error");
+                });
+            });
+          
+
 
             if (env.IsEnvironment("MyEnvironment"))
             {

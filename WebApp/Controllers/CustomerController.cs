@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,14 +16,18 @@ namespace WebApp.Controllers
     public class CustomerController : Controller
     {
         private ICustomerRepository _customerRepository;
-        public CustomerController(ICustomerRepository customerRepository)
+        ILogger<CustomerController> _logger;
+        public CustomerController(ICustomerRepository customerRepository, ILogger<CustomerController> logger)
         {
             _customerRepository = customerRepository;
+            _logger = logger;
+            logger.LogInformation("customercontroler has started!");
         }
 
         [HttpGet]
         public IActionResult GetAllCustomer()
         {
+            _logger.LogInformation("------> GetAllCustomers");
             var allcustomers = _customerRepository.GetAll().ToList();
 
             var allCustomersDto = allcustomers.Select(x => Mapper.Map<CustomerDto>(x));
@@ -55,7 +60,8 @@ namespace WebApp.Controllers
 
             if (!result)
             {
-                return new StatusCodeResult(500);
+                //return new StatusCodeResult(500);
+                throw new Exception("Something went wrong while adding new customer");
             }
 
             return Ok(Mapper.Map<CustomerDto>(customer));
@@ -80,7 +86,7 @@ namespace WebApp.Controllers
 
             if (!result)
             {
-                return new StatusCodeResult(500);
+                throw new Exception("Something went wrong while updating customer with id : {id}");
             }
 
             return Ok(Mapper.Map<CustomerDto>(customer));
@@ -112,7 +118,7 @@ namespace WebApp.Controllers
 
             if (!result)
             {
-                return new StatusCodeResult(500);
+                throw new Exception("Something went wrong while updating customer with id : {id}");
             }
 
             return Ok(Mapper.Map<CustomerDto>(customer));
@@ -135,7 +141,7 @@ namespace WebApp.Controllers
 
             if (!result)
             {
-                return new StatusCodeResult(500);
+                throw new Exception("Something went wrong while removing customer with id : {id}");
             }
 
             return NoContent();

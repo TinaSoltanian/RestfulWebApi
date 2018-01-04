@@ -16,9 +16,10 @@ E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig
 E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.dev.json
 E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.dll
 E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\WebApp.pdb
-E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
 E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csproj.CoreCompileInputs.cache
 E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfoInputs.cache
 E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
 E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
 E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb
+E:\Projects\RestWebApiCSharp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
+E:\Projects\RestWebApiCSharp\WebApp\bin\Debug\netcoreapp2.0\nlog.config
