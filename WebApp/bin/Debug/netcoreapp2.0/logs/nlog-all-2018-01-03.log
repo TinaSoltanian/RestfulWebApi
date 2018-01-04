@@ -1502,3 +1502,991 @@ VALUES (@p0, @p1, @p2, @p3);
 2018-01-03 20:39:52.6392|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 73.5485ms 200 text/html 
 2018-01-03 20:39:52.8356|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
 2018-01-03 20:39:53.0700|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 233.9291ms 200 application/json 
+2018-01-03 21:16:43.4616|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:16:43.6421|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 21:16:43.7292|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 21:16:43.8161|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (23ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 21:16:43.8297|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8358|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8358|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8358|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8507|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8507|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8507|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:43.8507|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:16:44.6666|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 21:16:44.7109|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 21:16:44.7310|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 80.1161ms 200 text/html 
+2018-01-03 21:16:44.9552|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 21:16:45.2293|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 273.5979ms 200 application/json 
+2018-01-03 21:17:39.1131|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:17:39.2906|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 21:17:39.3860|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 21:17:39.4767|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (27ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT; 
+2018-01-03 21:17:39.4915|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5152|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5152|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5253|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5253|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5253|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5404|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:39.5404|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 21:17:40.1047|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 21:17:40.1463|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 21:17:40.1674|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 76.5216ms 200 text/html 
+2018-01-03 21:17:40.3653|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 21:17:40.6506|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 285.3488ms 200 application/json 
+2018-01-03 21:18:31.9676|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=2   
+2018-01-03 21:18:32.0896|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:18:32.1336|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:18:32.1336|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:18:32.1828|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:18:32.6128|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (188ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:18:32.7548|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:253e1180-36a0-4596-8ced-319e8b1e852c
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:18:38.7499|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 6659.0725ms 
+2018-01-03 21:18:38.9182|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:18:39.0460|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:18:39.0681|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7104.8141ms 500 text/plain 
+2018-01-03 21:19:14.6380|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers?page=1&pagecount=2   
+2018-01-03 21:19:14.6380|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6.1658ms 404  
+2018-01-03 21:19:53.0579|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers?page=1&pagecount=2   
+2018-01-03 21:19:53.0579|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7.9577ms 404  
+2018-01-03 21:20:15.8226|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 21:20:15.8226|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4.3119ms 404  
+2018-01-03 21:29:28.1322|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 21:29:28.1322|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3.9284ms 404  
+2018-01-03 21:30:41.6570|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:30:41.6691|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:30:41.6777|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:30:49.2960|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:30:49.2960|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:30:49.3448|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:30:49.4594|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:492a181f-56e3-40aa-8941-12c8649073b3
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:30:50.8978|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 9235.1556ms 
+2018-01-03 21:30:51.0271|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:30:51.1507|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:30:51.1753|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 9522.2749ms 500 text/plain 
+2018-01-03 21:30:57.1941|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 21:30:57.1941|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5.3671ms 404  
+2018-01-03 21:31:08.4578|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:31:08.4638|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:31:08.4638|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:31:08.4767|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:31:08.4767|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:31:08.5165|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:31:08.6251|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:492a181f-56e3-40aa-8941-12c8649073b3
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:31:18.1023|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 9639.6017ms 
+2018-01-03 21:31:18.2439|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:31:18.3716|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:31:18.3888|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 9933.1103ms 500 text/plain 
+2018-01-03 21:31:41.6622|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 21:31:41.6682|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4.3441ms 404  
+2018-01-03 21:31:44.1594|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 21:31:44.1671|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6.0137ms 404  
+2018-01-03 21:31:55.2639|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:31:55.2639|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:31:55.2767|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:31:55.2767|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:32:09.4716|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:32:09.5099|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:09.6214|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:492a181f-56e3-40aa-8941-12c8649073b3
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:10.9489|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 15679.9217ms 
+2018-01-03 21:32:11.2237|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:11.3418|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:11.3597|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16097.4087ms 500 text/plain 
+2018-01-03 21:32:26.1293|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=2   
+2018-01-03 21:32:26.1345|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:32:26.1345|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:32:26.1474|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:32:33.5175|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:32:33.5586|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (3ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:33.6706|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:492a181f-56e3-40aa-8941-12c8649073b3
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:36.0129|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 9878.2277ms 
+2018-01-03 21:32:36.1649|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:36.2810|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:32:36.2998|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 10171.846ms 500 text/plain 
+2018-01-03 21:33:34.5834|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=2   
+2018-01-03 21:33:34.5873|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:33:34.5873|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:33:34.5873|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:33:34.6022|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:33:34.6363|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:33:34.7424|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:492a181f-56e3-40aa-8941-12c8649073b3
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:33:36.6065|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 2017.6121ms 
+2018-01-03 21:33:36.7342|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:33:36.8523|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:33:36.8717|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2287.5265ms 500 text/plain 
+2018-01-03 21:34:26.3126|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 21:34:26.3954|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 21:34:26.4166|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 123.3107ms 200 text/html 
+2018-01-03 21:34:26.6085|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 21:34:26.8813|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 273.1281ms 200 application/json 
+2018-01-03 21:34:32.5232|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:34:32.6223|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:34:32.6620|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:34:32.6676|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:34:32.6902|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:34:32.7812|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:32.8936|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:92e0352c-7ddb-44b9-badb-0a1d08bee92d
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:34.7321|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 2110.1645ms 
+2018-01-03 21:34:34.8895|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:35.0255|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:35.0484|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2526.7622ms 500 text/plain 
+2018-01-03 21:34:41.1940|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=2   
+2018-01-03 21:34:41.1940|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:34:41.2121|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:34:41.2121|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:34:41.2121|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:34:41.2613|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:41.3774|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:92e0352c-7ddb-44b9-badb-0a1d08bee92d
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:44.1319|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 2931.3693ms 
+2018-01-03 21:34:44.2792|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:44.4309|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:34:44.4499|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3257.0139ms 500 text/plain 
+2018-01-03 21:34:57.8991|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=2   
+2018-01-03 21:34:57.8991|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:34:57.8991|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:35:20.3922|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:35:35.6683|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:35:38.1132|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 21:35:38.1559|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 21:35:43.8478|22|Microsoft.AspNetCore.Server.Kestrel|WARN|Heartbeat took longer than "00:00:01" at "01/04/2018 05:35:43 +00:00". 
+2018-01-03 21:35:43.8874|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (3ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:35:44.0194|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:92e0352c-7ddb-44b9-badb-0a1d08bee92d
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:35:45.7486|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 47844.2005ms 
+2018-01-03 21:35:45.8792|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:35:46.0045|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:35:46.0251|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 48126.6477ms 500 text/plain 
+2018-01-03 21:36:38.4174|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 21:36:38.4980|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 21:36:38.5169|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 117.6753ms 200 text/html 
+2018-01-03 21:36:38.7174|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 21:36:38.9894|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 271.6735ms 200 application/json 
+2018-01-03 21:36:42.3219|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:36:42.4363|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:36:42.4730|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:36:56.2214|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:36:56.2620|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:36:56.3630|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:36:56.4788|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:c9968d39-6e2d-433a-9cb6-5a0b4bd7d830
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:36:58.0420|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 15605.1887ms 
+2018-01-03 21:36:58.1892|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:36:58.3192|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:36:58.3415|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16020.9397ms 500 text/plain 
+2018-01-03 21:37:04.4098|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:37:04.4163|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:37:04.4163|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:37:20.0086|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:37:24.7415|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:37:26.9040|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 21:37:26.9469|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 21:37:33.1884|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:37:33.3141|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:c9968d39-6e2d-433a-9cb6-5a0b4bd7d830
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:37:34.9164|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 30500.842ms 
+2018-01-03 21:37:35.0491|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:37:35.1910|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 21:37:35.2092|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 30801.2466ms 500 text/plain 
+2018-01-03 21:37:58.5866|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 21:37:58.6694|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 21:37:58.6885|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 119.8935ms 200 text/html 
+2018-01-03 21:37:58.8857|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 21:37:59.1709|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 284.8954ms 200 application/json 
+2018-01-03 21:38:04.8720|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 21:38:04.9122|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 40.925ms 404  
+2018-01-03 21:38:07.8861|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 21:38:07.9540|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 21:38:07.9922|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 21:38:10.5549|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 21:38:13.0064|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 21:38:13.0837|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (45ms) [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_0) [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 21:38:19.0176|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 21:38:19.0414|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 21:38:19.0816|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 11127.4281ms 
+2018-01-03 21:38:19.0868|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 11201.3901ms 200 application/json; charset=utf-8 
+2018-01-03 22:35:03.9537|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 22:35:04.0345|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 22:35:04.0523|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 118.8817ms 200 text/html 
+2018-01-03 22:35:04.2507|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 22:35:04.5221|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 271.4146ms 200 application/json 
+2018-01-03 22:35:35.3007|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 22:35:35.3447|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 44.6758ms 404  
+2018-01-03 22:35:37.6957|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 22:35:37.7606|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 22:35:37.7987|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 22:35:41.4755|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 22:35:44.2915|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 22:35:44.3958|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:35:44.5093|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:75cad4b3-3972-42ef-8355-44d4426c0bd3
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:35:46.6164|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 8856.9558ms 
+2018-01-03 22:35:46.7844|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:35:46.9090|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:35:46.9321|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 9236.3186ms 500 text/plain 
+2018-01-03 22:42:17.8798|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 22:42:17.9638|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 22:42:17.9858|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 125.7478ms 200 text/html 
+2018-01-03 22:42:18.1961|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 22:42:18.4669|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 271.9973ms 200 application/json 
+2018-01-03 22:42:30.9334|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 22:42:30.9776|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 45.4436ms 404  
+2018-01-03 22:42:33.4138|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 22:42:33.4861|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 22:42:33.5231|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 22:42:33.5231|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 22:42:38.6416|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 22:42:38.8004|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (3ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:42:38.9088|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:4b5edc7a-2a8a-4b0f-8f22-33298ae807cc
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:42:44.8768|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 11392.0649ms 
+2018-01-03 22:42:45.0393|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:42:45.2134|500|Global exception logger|ERROR|Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+2018-01-03 22:42:45.2359|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 11823.1347ms 500 text/plain 
+2018-01-03 22:43:32.6080|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 22:43:32.6938|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 22:43:32.7124|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 124.2232ms 200 text/html 
+2018-01-03 22:43:32.9131|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 22:43:33.1858|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 272.8002ms 200 application/json 
+2018-01-03 22:44:27.4993|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 22:44:27.5963|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 22:44:27.6339|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 22:44:27.6339|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 22:44:34.8964|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 22:44:34.9317|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 22:47:21.6693|10102|Microsoft.EntityFrameworkCore.Query|WARN|Query: '(from Customer <generated>_1 in DbSet<Customer> select [<generated>_1]).Skip(__p_0)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. 
+2018-01-03 22:47:21.7496|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (2ms) [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS Incorrect syntax near 'OFFSET'.
+2018-01-03 22:47:21.8549|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:0798a8b8-e2b4-42f0-b849-367d382bff60
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+2018-01-03 22:47:22.0268|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (1ms) [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS Incorrect syntax near 'OFFSET'.
+2018-01-03 22:47:22.1420|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:0798a8b8-e2b4-42f0-b849-367d382bff60
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+2018-01-03 22:47:22.4820|20102|Microsoft.EntityFrameworkCore.Database.Command|ERROR|Failed executing DbCommand (2ms) [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS Incorrect syntax near 'OFFSET'.
+2018-01-03 22:47:22.5777|10100|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred in the database while iterating the results of a query for context type 'WebApp.Entities.MyDBContext'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'OFFSET'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:0798a8b8-e2b4-42f0-b849-367d382bff60
+Error Number:102,State:1,Class:15 Incorrect syntax near 'OFFSET'.
+2018-01-03 23:57:03.9981|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 23:57:04.0934|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 23:57:04.1144|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 136.2256ms 200 text/html 
+2018-01-03 23:57:04.3228|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 23:57:04.6130|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 289.7135ms 200 application/json 
+2018-01-03 23:57:11.1293|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 23:57:11.2398|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:57:11.2769|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:57:11.2769|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:57:11.2910|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:57:11.3153|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:57:11.3413|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:57:11.3677|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:57:11.4105|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 169.5769ms 
+2018-01-03 23:57:11.4159|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 286.4451ms 200 application/json; charset=utf-8 
+2018-01-03 23:57:23.4387|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customers   
+2018-01-03 23:57:23.4452|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6.2143ms 404  
+2018-01-03 23:58:23.9945|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-03 23:58:23.9945|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:58:24.0108|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:58:24.0108|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:58:24.0251|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:58:24.0657|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:58:24.0708|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:58:24.0708|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:58:24.0708|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 80.8303ms 
+2018-01-03 23:58:24.0851|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 90.384ms 200 application/json; charset=utf-8 
+2018-01-03 23:58:42.6345|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=2   
+2018-01-03 23:58:42.6345|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:58:42.6518|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:58:42.6518|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:58:42.6518|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:58:42.6659|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:58:42.6659|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:58:42.6783|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:58:42.6783|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 43.9074ms 
+2018-01-03 23:58:42.6973|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 60.4345ms 200 application/json; charset=utf-8 
+2018-01-03 23:58:46.3767|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=1&pagecount=3   
+2018-01-03 23:58:46.3811|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:58:46.3811|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:58:46.3811|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:58:46.3811|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:58:46.4015|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:58:46.4015|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:58:46.4015|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:58:46.4149|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 33.7622ms 
+2018-01-03 23:58:46.4149|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 42.1879ms 200 application/json; charset=utf-8 
+2018-01-03 23:58:49.7269|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=3&pagecount=3   
+2018-01-03 23:58:49.7269|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:58:49.7269|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:58:49.7269|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:58:49.7441|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:58:49.7441|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:58:49.7441|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:58:49.7587|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:58:49.7587|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 31.6457ms 
+2018-01-03 23:58:49.7587|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 39.8147ms 200 application/json; charset=utf-8 
+2018-01-03 23:58:52.7490|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=4&pagecount=3   
+2018-01-03 23:58:52.7490|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:58:52.7574|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:58:52.7574|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:58:52.7574|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:58:52.7720|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:58:52.7720|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:58:52.7720|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:58:52.7720|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 32.5507ms 
+2018-01-03 23:58:52.7896|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 41.2236ms 200 application/json; charset=utf-8 
+2018-01-03 23:58:56.6462|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=3&pagecount=3   
+2018-01-03 23:58:56.6507|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 23:58:56.6507|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-03 23:58:56.6507|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 23:58:56.6639|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 23:58:56.6639|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-03 23:58:56.6639|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-03 23:58:56.6639|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 23:58:56.6812|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 30.7668ms 
+2018-01-03 23:58:56.6812|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 39.031ms 200 application/json; charset=utf-8 

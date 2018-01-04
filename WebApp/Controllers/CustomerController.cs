@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApp.Dtos;
 using WebApp.Entities;
+using WebApp.QueryParameter;
 using WebApp.Repositories;
 
 namespace WebApp.Controllers
@@ -26,12 +28,14 @@ namespace WebApp.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(List<Customer>), 200)]
-        public IActionResult GetAllCustomer()
+        public IActionResult GetAllCustomer(CustomerQueryParameter customerQueryParameter)
         {
             _logger.LogInformation("------> GetAllCustomers");
-            var allcustomers = _customerRepository.GetAll().ToList();
+            var allcustomers = _customerRepository.GetAll(customerQueryParameter).ToList();
 
             var allCustomersDto = allcustomers.Select(x => Mapper.Map<CustomerDto>(x));
+
+            Response.Headers.Add("x-Paging", JsonConvert.SerializeObject(new { totalCount = _customerRepository.Count() }));
 
             return Ok(allCustomersDto);
         }

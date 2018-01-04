@@ -47,6 +47,18 @@ namespace WebApp.Services
             _mydbcontext.Customers.Add(customer3);
             _mydbcontext.SaveChanges();
 
+            for (int i = 1; i < 6; i++)
+            {
+                Customer c = new Customer();
+                c.Firstname = "Customer" + i.ToString();
+                c.Lastname = "Customer" + i.ToString();
+                c.Age = i + 30;
+                c.Id = Guid.NewGuid();
+
+                _mydbcontext.Customers.Add(c);
+                _mydbcontext.SaveChanges();
+            }
+
             await _mydbcontext.SaveChangesAsync();
         }
     }

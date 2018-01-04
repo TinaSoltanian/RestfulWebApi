@@ -70,3 +70,86 @@
 2018-01-03 20:36:41.2164|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/Customer/85347c0d-480d-4134-87dc-792f3fb7a2d1|action: Remove
 2018-01-03 20:36:57.2297|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/Customer|action: GetAllCustomer
 2018-01-03 20:36:57.2450|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/Customer|action: GetAllCustomer
+2018-01-03 21:18:32.0896|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:18:32.1336|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:18:39.0460|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:30:41.6691|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:30:49.2960|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:30:51.1507|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:31:08.4638|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:31:08.4767|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:31:18.3716|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:31:55.2639|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:31:55.2767|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:32:11.3418|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:32:26.1345|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:32:26.1474|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:32:36.2810|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:33:34.5873|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:33:34.5873|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:33:36.8523|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:32.6223|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:32.6676|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:35.0255|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:41.1940|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:41.2121|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:44.4309|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:34:57.8991|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:35:20.3922|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:35:46.0045|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:36:42.4363|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:36:56.2214|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:36:58.3192|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:37:04.4163|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:37:20.0086|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:37:35.1910|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:38:07.9540|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 21:38:10.5549|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:35:37.7606|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:35:41.4755|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:35:46.9090|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:42:33.4861|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:42:33.5231|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:42:45.2134|500|Global exception logger|ERROR|  Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement. Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.|url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:44:27.5963|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 22:44:27.6339|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:57:11.2398|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:57:11.2769|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:23.9945|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:24.0108|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:42.6345|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:42.6518|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:46.3811|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:46.3811|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:49.7269|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:49.7269|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:52.7490|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:52.7574|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:56.6507|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer|action: GetAllCustomer
+2018-01-03 23:58:56.6507|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/customer|action: GetAllCustomer

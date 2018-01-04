@@ -45,7 +45,8 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
-            services.AddDbContext<MyDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<MyDBContext>(options =>
+                            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<ISeedDataService, SeedDataService>();
 
@@ -65,6 +66,7 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.AddSeedData();
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug(LogLevel.Error);
             loggerFactory.AddNLog();
@@ -108,9 +110,7 @@ namespace WebApp
                 mapper.CreateMap<Customer, CustomerDto>().ReverseMap();
                 mapper.CreateMap<Customer, CustomerCreateDto>().ReverseMap();
                 mapper.CreateMap<Customer, CustomerUpdateDto>().ReverseMap();
-            });
-
-            app.AddSeedData();
+            });   
 
             app.UseSwagger();
             app.UseSwaggerUI(config =>

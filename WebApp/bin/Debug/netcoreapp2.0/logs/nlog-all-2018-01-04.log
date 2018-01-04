@@ -1,0 +1,310 @@
+2018-01-04 00:11:40.5583|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:11:40.6441|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:11:40.6682|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 125.6204ms 200 text/html 
+2018-01-04 00:11:40.8879|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:11:41.1887|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 300.1829ms 200 application/json 
+2018-01-04 00:11:43.4751|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?page=3&pagecount=3   
+2018-01-04 00:11:43.5705|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:11:43.6104|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:11:43.6158|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:11:43.6501|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:11:43.6765|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:11:43.7036|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:11:43.7302|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:11:43.7480|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 178.4196ms 
+2018-01-04 00:11:43.7480|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 277.2857ms 200 application/json; charset=utf-8 
+2018-01-04 00:11:52.3262|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:11:52.3262|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:11:52.3381|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:11:52.3381|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:11:52.3381|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:11:52.3545|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:11:52.3545|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:11:52.3545|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:11:52.3683|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 37.5699ms 
+2018-01-04 00:11:52.3683|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 46.2647ms 200 application/json; charset=utf-8 
+2018-01-04 00:12:07.1798|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:12:07.1798|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:12:07.1798|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:12:07.1798|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:12:07.1976|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:12:07.1976|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:12:53.0002|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:12:53.0863|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:12:53.1054|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 127.8834ms 200 text/html 
+2018-01-04 00:12:53.2980|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:12:53.5724|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 274.6821ms 200 application/json 
+2018-01-04 00:12:57.1099|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:12:57.2121|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:12:57.2475|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:12:57.2475|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:12:57.2660|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:12:57.2867|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:12:57.3115|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:12:57.3370|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:12:57.3747|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 163.5981ms 
+2018-01-04 00:12:57.3747|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 269.2859ms 200 application/json; charset=utf-8 
+2018-01-04 00:13:07.9245|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?Firstname=tina   
+2018-01-04 00:13:07.9301|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:13:07.9301|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:13:07.9301|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:13:07.9489|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:13:07.9489|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:13:07.9620|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:13:07.9620|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:13:07.9620|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 42.4514ms 
+2018-01-04 00:13:07.9833|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 52.8602ms 200 application/json; charset=utf-8 
+2018-01-04 00:16:44.2553|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:16:44.3449|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:16:44.3630|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 127.7248ms 200 text/html 
+2018-01-04 00:16:44.5600|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:16:44.8302|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 271.4506ms 200 application/json 
+2018-01-04 00:17:54.2376|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=tina   
+2018-01-04 00:17:54.3338|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:17:54.3763|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:17:54.3814|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:17:54.4130|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:17:54.4352|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:17:59.5002|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:17:59.5238|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:17:59.5469|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 5213.8743ms 
+2018-01-04 00:17:59.5469|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5313.8209ms 200 application/json; charset=utf-8 
+2018-01-04 00:18:06.4185|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:18:06.4185|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:18:06.4320|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:18:06.4320|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:18:06.4320|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:18:06.4482|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:18:06.4482|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:18:06.4482|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:18:06.4876|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 64.0033ms 
+2018-01-04 00:18:06.4920|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 73.8168ms 200 application/json; charset=utf-8 
+2018-01-04 00:18:31.3841|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:18:31.3841|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:18:31.3989|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:18:31.3989|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:18:31.3989|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:18:31.4131|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:18:31.4131|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:18:31.4131|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:18:31.4131|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 37.2083ms 
+2018-01-04 00:18:31.4325|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 47.8214ms 200 application/json; charset=utf-8 
+2018-01-04 00:18:42.2813|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:18:42.2813|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:18:42.2885|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:18:42.2885|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:18:42.2885|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:18:42.2885|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:19:12.6948|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:19:12.7781|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:19:12.7962|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 121.8449ms 200 text/html 
+2018-01-04 00:19:12.9895|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:19:13.2616|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 272.1093ms 200 application/json 
+2018-01-04 00:19:17.2316|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:19:17.3343|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:19:17.3726|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:19:17.3726|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:19:17.3893|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:19:17.4114|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:19:17.4383|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:19:17.4685|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:19:17.4876|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 154.6457ms 
+2018-01-04 00:19:17.4924|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 260.6056ms 200 application/json; charset=utf-8 
+2018-01-04 00:19:33.6861|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:19:33.6861|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:19:33.7013|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:19:33.7013|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:19:33.7103|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:19:33.7103|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:19:55.4901|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:19:55.5699|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:19:55.5915|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 116.8551ms 200 text/html 
+2018-01-04 00:19:55.7877|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:19:56.0730|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 285.1986ms 200 application/json 
+2018-01-04 00:19:58.1693|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:19:58.2738|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:19:58.3136|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:19:58.3136|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:19:58.3309|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:19:58.3573|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:20:02.9126|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:20:02.9409|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:20:02.9620|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 4688.9044ms 
+2018-01-04 00:20:02.9620|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4797.3064ms 200 application/json; charset=utf-8 
+2018-01-04 00:20:16.0031|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:20:16.0080|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:20:16.0080|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:20:16.0080|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:20:16.0263|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:20:16.0263|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:21:37.8434|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:21:37.9284|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:21:37.9491|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 123.5654ms 200 text/html 
+2018-01-04 00:21:38.1476|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:21:38.4181|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 269.7436ms 200 application/json 
+2018-01-04 00:21:40.9751|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:21:41.0745|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:21:41.1126|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:21:41.1179|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:21:41.1179|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:21:41.1508|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Age], [a].[Firstname], [a].[Lastname]
+FROM [Customers] AS [a]
+ORDER BY [a].[Firstname] 
+2018-01-04 00:21:44.9153|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:21:44.9403|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:21:44.9781|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 3904.3406ms 
+2018-01-04 00:21:44.9781|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4007.9544ms 200 application/json; charset=utf-8 
+2018-01-04 00:32:03.1847|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:32:03.2739|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:32:03.2918|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 125.187ms 200 text/html 
+2018-01-04 00:32:03.4941|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:32:03.7817|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 287.6338ms 200 application/json 
+2018-01-04 00:32:08.6669|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?query=Tina   
+2018-01-04 00:32:08.7700|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:32:08.8082|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:32:08.8082|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:32:11.0536|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 2281.9932ms 
+2018-01-04 00:32:11.1524|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Value cannot be null.
+Parameter name: ordering Value cannot be null.
+Parameter name: ordering
+2018-01-04 00:32:11.2081|500|Global exception logger|ERROR|Value cannot be null.
+Parameter name: ordering Value cannot be null.
+Parameter name: ordering
+2018-01-04 00:32:11.2304|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2563.0469ms 500 text/plain 
+2018-01-04 00:32:20.0653|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:32:20.0705|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:32:20.0705|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:32:20.0705|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:32:24.7424|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 4671.4625ms 
+2018-01-04 00:32:24.8075|0|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred: Value cannot be null.
+Parameter name: ordering Value cannot be null.
+Parameter name: ordering
+2018-01-04 00:32:24.8608|500|Global exception logger|ERROR|Value cannot be null.
+Parameter name: ordering Value cannot be null.
+Parameter name: ordering
+2018-01-04 00:32:24.8743|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4809.4445ms 500 text/plain 
+2018-01-04 00:32:59.9067|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-04 00:32:59.9905|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-04 00:33:00.0119|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 124.3506ms 200 text/html 
+2018-01-04 00:33:00.2260|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-04 00:33:00.4969|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 271.249ms 200 application/json 
+2018-01-04 00:33:19.4835|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer   
+2018-01-04 00:33:19.5885|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:33:19.6272|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:33:19.6336|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:33:19.6814|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:33:20.6685|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Firstname] 
+2018-01-04 00:33:20.6922|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:33:20.7144|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:33:20.7551|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 1166.2007ms 
+2018-01-04 00:33:20.7599|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1276.4385ms 200 application/json; charset=utf-8 
+2018-01-04 00:33:35.9834|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=lastname   
+2018-01-04 00:33:35.9834|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:33:35.9990|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:33:35.9990|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:33:36.0083|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:33:36.0330|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Lastname] 
+2018-01-04 00:33:36.0404|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:33:36.0404|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:33:36.0404|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 61.0181ms 
+2018-01-04 00:33:36.0542|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 70.4318ms 200 application/json; charset=utf-8 
+2018-01-04 00:33:43.2094|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age   
+2018-01-04 00:33:43.2094|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:33:43.2094|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:33:43.2094|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:33:43.2279|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:33:43.2537|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Age] 
+2018-01-04 00:33:43.2585|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:33:43.2585|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:33:43.2585|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 52.6424ms 
+2018-01-04 00:33:43.2585|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 61.2896ms 200 application/json; charset=utf-8 
+2018-01-04 00:33:47.4077|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/customer?orderby=age%20desc   
+2018-01-04 00:33:47.4077|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-04 00:33:47.4171|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments (WebApp.QueryParameter.CustomerQueryParameter) - ModelState is Valid 
+2018-01-04 00:33:47.4171|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-04 00:33:47.4171|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-04 00:33:47.4488|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c]
+ORDER BY [c].[Age] DESC 
+2018-01-04 00:33:47.4488|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c] 
+2018-01-04 00:33:47.4488|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-04 00:33:47.4638|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 50.9853ms 
+2018-01-04 00:33:47.4638|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 60.9607ms 200 application/json; charset=utf-8 
