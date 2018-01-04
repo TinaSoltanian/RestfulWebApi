@@ -1283,3 +1283,222 @@ WHERE [x].[Id] = @__id_0
 2018-01-03 18:54:08.4932|1|Microsoft.AspNetCore.Mvc.StatusCodeResult|INFO|Executing HttpStatusCodeResult, setting HTTP status code 404 
 2018-01-03 18:54:08.4932|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.PartialUpdate (WebApp) in 28.0661ms 
 2018-01-03 18:54:08.4932|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 37.3683ms 404  
+2018-01-03 20:36:02.8717|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 20:36:03.0665|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 20:36:03.1548|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 20:36:03.2421|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (24ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 20:36:03.2421|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:36:03.2619|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:36:03.2619|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:36:03.9304|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/   
+2018-01-03 20:36:03.9644|6|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /index.html was not modified 
+2018-01-03 20:36:03.9812|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 68.3339ms 304 text/html 
+2018-01-03 20:36:08.8913|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 20:36:09.2325|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 341.7882ms 200 application/json 
+2018-01-03 20:36:17.4182|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger   
+2018-01-03 20:36:17.4703|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 8.1004ms 301  
+2018-01-03 20:36:17.4762|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 20:36:17.4762|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 20:36:17.4943|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16.8713ms 200 text/html 
+2018-01-03 20:36:17.5165|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/css/typography.css   
+2018-01-03 20:36:17.6135|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/css/screen.css   
+2018-01-03 20:36:17.6135|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/jquery.slideto.min.js   
+2018-01-03 20:36:17.6178|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/jquery-1.8.0.min.js   
+2018-01-03 20:36:17.6614|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/typography.css'. Physical path: 'N/A' 
+2018-01-03 20:36:17.6650|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/object-assign-pollyfill.js   
+2018-01-03 20:36:17.7023|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/css/reset.css   
+2018-01-03 20:36:17.7023|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/screen.css'. Physical path: 'N/A' 
+2018-01-03 20:36:17.7249|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:17.7894|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:17.7894|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A' 
+2018-01-03 20:36:17.8197|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 207.9329ms 200 text/css 
+2018-01-03 20:36:17.8197|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 198.4622ms 200 application/javascript 
+2018-01-03 20:36:17.9108|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 300.1526ms 200 application/javascript 
+2018-01-03 20:36:17.9145|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 160.3997ms 200 text/css 
+2018-01-03 20:36:17.9297|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/reset.css'. Physical path: 'N/A' 
+2018-01-03 20:36:17.9779|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 226.0461ms 200 application/javascript 
+2018-01-03 20:36:18.0312|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/jquery.wiggle.min.js   
+2018-01-03 20:36:18.0553|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 458.7698ms 200 text/css 
+2018-01-03 20:36:18.1651|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/backbone-min.js   
+2018-01-03 20:36:18.1651|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/jquery.ba-bbq.min.js   
+2018-01-03 20:36:18.2108|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/handlebars-4.0.5.js   
+2018-01-03 20:36:18.2568|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/lodash.min.js   
+2018-01-03 20:36:18.2851|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/swagger-ui.min.js   
+2018-01-03 20:36:18.2851|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A' 
+2018-01-03 20:36:18.3733|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:18.3733|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:18.4124|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:18.4216|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:18.4216|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 529.9882ms 200 application/javascript 
+2018-01-03 20:36:18.4383|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 370.7603ms 200 application/javascript 
+2018-01-03 20:36:18.4383|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 489.545ms 200 application/javascript 
+2018-01-03 20:36:18.4663|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:18.7774|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 439.76ms 200 application/javascript 
+2018-01-03 20:36:18.7774|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 345.7218ms 200 application/javascript 
+2018-01-03 20:36:18.7882|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/highlight.9.1.0.pack.js   
+2018-01-03 20:36:18.8688|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/jsoneditor.min.js   
+2018-01-03 20:36:18.8688|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/marked.js   
+2018-01-03 20:36:18.9467|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A' 
+2018-01-03 20:36:19.0288|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/swagger-oauth.js   
+2018-01-03 20:36:19.0220|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A' 
+2018-01-03 20:36:19.0734|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/lib/highlight.9.1.0.pack_extended.js   
+2018-01-03 20:36:19.1207|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A' 
+2018-01-03 20:36:19.1450|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A' 
+2018-01-03 20:36:19.1498|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 257.6176ms 200 application/javascript 
+2018-01-03 20:36:19.1498|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A' 
+2018-01-03 20:36:19.2422|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 312.1666ms 200 application/javascript 
+2018-01-03 20:36:19.2173|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 917.0535ms 200 application/javascript 
+2018-01-03 20:36:19.2745|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 334.742ms 200 application/javascript 
+2018-01-03 20:36:19.3054|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 459.0632ms 200 application/javascript 
+2018-01-03 20:36:19.3540|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 267.0346ms 200 application/javascript 
+2018-01-03 20:36:19.3540|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/images/logo_small.png   
+2018-01-03 20:36:19.4268|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 20:36:19.4377|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/css/print.css   
+2018-01-03 20:36:19.4377|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A' 
+2018-01-03 20:36:19.4525|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/print.css'. Physical path: 'N/A' 
+2018-01-03 20:36:19.5221|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 172.8238ms 200 image/png 
+2018-01-03 20:36:19.5451|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 124.568ms 200 application/json 
+2018-01-03 20:36:19.5451|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 204.4583ms 200 text/css 
+2018-01-03 20:36:19.5945|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/images/favicon-32x32.png   
+2018-01-03 20:36:19.6005|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A' 
+2018-01-03 20:36:19.6005|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 79.212ms 200 image/png 
+2018-01-03 20:36:19.6326|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/images/favicon-16x16.png   
+2018-01-03 20:36:19.6326|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A' 
+2018-01-03 20:36:19.6326|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 31.2916ms 200 image/png 
+2018-01-03 20:36:20.8028|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/images/throbber.gif   
+2018-01-03 20:36:20.8099|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/throbber.gif'. Physical path: 'N/A' 
+2018-01-03 20:36:20.8099|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13.3235ms 200 image/gif 
+2018-01-03 20:36:23.1039|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/Customer   
+2018-01-03 20:36:23.1922|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 20:36:23.2092|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 20:36:23.2144|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 20:36:23.2144|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 20:36:23.2287|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 20:36:23.2417|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 20:36:23.2928|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 100.9775ms 
+2018-01-03 20:36:23.2928|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 194.0714ms 200 application/json; charset=utf-8 
+2018-01-03 20:36:41.1934|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 DELETE http://localhost:3775/api/Customer/85347c0d-480d-4134-87dc-792f3fb7a2d1   
+2018-01-03 20:36:41.2164|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 20:36:41.2466|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.Remove (WebApp) with arguments (85347c0d-480d-4134-87dc-792f3fb7a2d1) - ModelState is Valid 
+2018-01-03 20:36:41.2466|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 20:36:41.2842|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[Firstname], [x].[Lastname]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2018-01-03 20:36:41.2908|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[Firstname], [x].[Lastname]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2018-01-03 20:36:41.3223|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT; 
+2018-01-03 20:36:41.3223|1|Microsoft.AspNetCore.Mvc.StatusCodeResult|INFO|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2018-01-03 20:36:41.3350|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.Remove (WebApp) in 120.9119ms 
+2018-01-03 20:36:41.3350|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 148.9977ms 204  
+2018-01-03 20:36:57.2238|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/api/Customer   
+2018-01-03 20:36:57.2297|0|WebApp.Controllers.CustomerController|INFO|customercontroler has started! 
+2018-01-03 20:36:57.2297|1|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) with arguments ((null)) - ModelState is Valid 
+2018-01-03 20:36:57.2450|0|WebApp.Controllers.CustomerController|INFO|------> GetAllCustomers 
+2018-01-03 20:36:57.2450|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 20:36:57.2580|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 20:36:57.2580|1|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2018-01-03 20:36:57.2580|2|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action WebApp.Controllers.CustomerController.GetAllCustomer (WebApp) in 38.8579ms 
+2018-01-03 20:36:57.2580|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 49.0493ms 200 application/json; charset=utf-8 
+2018-01-03 20:38:32.8451|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 20:38:33.0142|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 20:38:33.1061|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 20:38:33.1894|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (23ms) [Parameters=[@p0='?', @p1='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; 
+2018-01-03 20:38:33.2012|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:38:33.2012|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:38:33.2109|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:38:49.4318|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 20:38:49.4711|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 20:38:49.4923|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 75.0073ms 200 text/html 
+2018-01-03 20:38:49.7322|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 20:38:49.9693|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 236.7273ms 200 application/json 
+2018-01-03 20:39:51.7676|10403|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.0.1-rtm-125 initialized 'MyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2018-01-03 20:39:51.9470|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2018-01-03 20:39:52.0346|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[Firstname], [c].[Lastname]
+FROM [Customers] AS [c] 
+2018-01-03 20:39:52.1214|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (24ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Customers]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Customers]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT; 
+2018-01-03 20:39:52.1350|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:39:52.1591|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:39:52.1635|20101|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [Firstname], [Lastname])
+VALUES (@p0, @p1, @p2, @p3); 
+2018-01-03 20:39:52.5815|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/   
+2018-01-03 20:39:52.6204|2|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2018-01-03 20:39:52.6392|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 73.5485ms 200 text/html 
+2018-01-03 20:39:52.8356|1|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:3775/swagger/v1/swagger.json   
+2018-01-03 20:39:53.0700|2|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 233.9291ms 200 application/json 

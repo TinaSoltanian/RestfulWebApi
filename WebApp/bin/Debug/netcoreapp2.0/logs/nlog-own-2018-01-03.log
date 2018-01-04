@@ -65,3 +65,8 @@
 2018-01-03 18:53:02.7266|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/c3270bbd-7cfa-4dcc-9b1d-3e8f43f5a094|action: UpdateCustomer
 2018-01-03 18:53:15.9930|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/c3270bbd-7cfa-4dcc-9b1d-3e8f43f5a094|action: PartialUpdate
 2018-01-03 18:54:08.4683|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/customer/c3270bbd-7cfa-4c-9b1d-3e8f43f5a094|action: PartialUpdate
+2018-01-03 20:36:23.1922|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/Customer|action: GetAllCustomer
+2018-01-03 20:36:23.2144|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/Customer|action: GetAllCustomer
+2018-01-03 20:36:41.2164|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/Customer/85347c0d-480d-4134-87dc-792f3fb7a2d1|action: Remove
+2018-01-03 20:36:57.2297|0|WebApp.Controllers.CustomerController|INFO|  customercontroler has started! |url: http://localhost/api/Customer|action: GetAllCustomer
+2018-01-03 20:36:57.2450|0|WebApp.Controllers.CustomerController|INFO|  ------> GetAllCustomers |url: http://localhost/api/Customer|action: GetAllCustomer

@@ -25,6 +25,7 @@ namespace WebApp.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(List<Customer>), 200)]
         public IActionResult GetAllCustomer()
         {
             _logger.LogInformation("------> GetAllCustomers");
@@ -50,6 +51,8 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(CustomerDto), 201)]
+        [ProducesResponseType(typeof(CustomerDto), 400)]
         public IActionResult AddCustomer([FromBody] CustomerCreateDto customerCreateDto)
         {
             if (customerCreateDto == null)

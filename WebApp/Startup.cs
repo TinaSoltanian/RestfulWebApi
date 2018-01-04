@@ -21,6 +21,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Web;
 using NLog.Extensions.Logging;
 using Microsoft.AspNetCore.Diagnostics;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace WebApp
 {
@@ -47,6 +48,12 @@ namespace WebApp
             services.AddDbContext<MyDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<ISeedDataService, SeedDataService>();
+
+            services.AddSwaggerGen(config =>
+            {
+                config.SwaggerDoc("v1", new Info { Title = "Customer Info WebApi", Version = "v1" });
+            });
+
             services.AddMvc(options =>
             {
                 options.ReturnHttpNotAcceptable = true;
@@ -104,6 +111,12 @@ namespace WebApp
             });
 
             app.AddSeedData();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(config =>
+            {
+                config.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer info web api");
+            });
 
             app.UseMvc();
         }
