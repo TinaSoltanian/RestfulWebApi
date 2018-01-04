@@ -15,7 +15,7 @@ using WebApp.Repositories;
 namespace WebApp.Controllers
 {
     [ApiVersion("2.0")]
-    [Route("api/[controller]")]
+    [Route("api/customer")]
     public class Customer2Controller : Controller
     {
         private ICustomerRepository _customerRepository;
