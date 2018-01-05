@@ -1,21 +1,22 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebApp.Dtos;
 using WebApp.Entities;
 using WebApp.QueryParameter;
 using WebApp.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace WebApp.Controllers
 {
     [ApiVersion("1.0", Deprecated = true)]
     [Route("api/[controller]")]
+    [Authorize(Policy = "resourcesUser")]
     public class CustomerController : Controller
     {
         private ICustomerRepository _customerRepository;

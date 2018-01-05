@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -16,6 +16,7 @@ namespace WebApp.Controllers
 {
     [ApiVersion("2.0")]
     [Route("api/customer")]
+    [Authorize(Policy = "resourcesAdmin")]
     public class Customer2Controller : Controller
     {
         private ICustomerRepository _customerRepository;

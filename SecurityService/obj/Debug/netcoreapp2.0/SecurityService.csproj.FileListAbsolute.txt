@@ -1,0 +1,11 @@
+E:\Projects\RestWebApiCSharp\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.deps.json
+E:\Projects\RestWebApiCSharp\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.runtimeconfig.json
+E:\Projects\RestWebApiCSharp\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.runtimeconfig.dev.json
+E:\Projects\RestWebApiCSharp\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.dll
+E:\Projects\RestWebApiCSharp\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csproj.CoreCompileInputs.cache
+E:\Projects\RestWebApiCSharp\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.AssemblyInfoInputs.cache
+E:\Projects\RestWebApiCSharp\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.AssemblyInfo.cs
+E:\Projects\RestWebApiCSharp\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.pdb
+E:\Projects\RestWebApiCSharp\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.dll
+E:\Projects\RestWebApiCSharp\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.pdb
+E:\Projects\RestWebApiCSharp\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csprojResolveAssemblyReference.cache

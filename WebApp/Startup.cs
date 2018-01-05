@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using WebApp.Middlewares;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using WebApp.Middlewares;
 using System.IO;
-using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
-using WebApp.Repositories;
-using Microsoft.EntityFrameworkCore.Design;
 using WebApp.Entities;
+using WebApp.Repositories;
 using WebApp.Dtos;
 using WebApp.Services;
 using Microsoft.AspNetCore.Mvc.Formatters;
-using Microsoft.Extensions.Logging;
 using NLog.Web;
 using NLog.Extensions.Logging;
 using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace WebApp
 {
@@ -47,6 +45,20 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
+
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder
+                            .AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
+
             services.AddDbContext<MyDBContext>(options =>
                             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ICustomerRepository, CustomerRepository>();
@@ -55,6 +67,29 @@ namespace WebApp
             services.AddSwaggerGen(config =>
             {
                 config.SwaggerDoc("v1", new Info { Title = "Customer Info WebApi", Version = "v1" });
+            });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("resourcesAdmin", policyAdmin =>
+                {
+                    policyAdmin.RequireClaim("role", "resources.admin");
+                });
+                options.AddPolicy("resourcesUser", policyUser =>
+                {
+                    policyUser.RequireClaim("role", "resources.user");
+                });
+            });
+
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+            .AddIdentityServerAuthentication(options =>
+            {
+                // base-address of your identityserver
+                options.Authority = "http://localhost:57229";
+
+                // name of the API resource
+                options.ApiName = "resourcesScope";
+                options.RequireHttpsMetadata = false;
             });
 
             services.AddMvc(options =>
@@ -104,8 +139,8 @@ namespace WebApp
                     await context.Response.WriteAsync("There was an error");
                 });
             });
-          
 
+            app.UseAuthentication();
 
             if (env.IsEnvironment("MyEnvironment"))
             {
